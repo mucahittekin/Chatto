@@ -181,7 +181,7 @@ public extension TextMessageCollectionViewCellDefaultStyle { // Default values
     static public func createDefaultTextStyle() -> TextStyle {
         return TextStyle(
             font: UIFont.systemFont(ofSize: 16),
-            incomingColor: UIColor.black,
+            incomingColor: UIColor(red: 0.467, green: 0.467, blue: 0.467, alpha: 1),
             outgoingColor: UIColor.white,
             incomingInsets: UIEdgeInsets(top: 10, left: 19, bottom: 10, right: 15),
             outgoingInsets: UIEdgeInsets(top: 10, left: 15, bottom: 10, right: 19)

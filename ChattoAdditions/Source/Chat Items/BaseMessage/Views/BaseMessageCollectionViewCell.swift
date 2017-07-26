@@ -207,6 +207,8 @@ open class BaseMessageCollectionViewCell<BubbleViewType>: UICollectionViewCell, 
         let avatarImageSize = baseStyle.avatarSize(viewModel: messageViewModel)
         if avatarImageSize != CGSize.zero {
             self.avatarView.image = self.messageViewModel.avatarImage.value
+            self.avatarView.layer.cornerRadius = avatarImageSize.height / 2
+            self.avatarView.layer.masksToBounds = true
         }
         self.setNeedsLayout()
     }
